@@ -1,0 +1,31 @@
+{
+  "name": "creative-upload",
+  "description": "Creative Upload Interaction with Javascript and Canvas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmgonzalves/creative-upload.git"
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "upload",
+    "canvas",
+    "animation",
+    "interaction"
+  ],
+  "author": "lmgonzalves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmgonzalves/creative-upload/issues"
+  },
+  "homepage": "http://lmgonzalves.github.io/creative-upload/",
+  "engine": {
+    "node": ">=6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-sass": "^2.3.1"
+  }
+}

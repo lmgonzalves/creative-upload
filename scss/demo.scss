@@ -1,0 +1,72 @@
+@import "general";
+
+// Position `form` and `canvas` full width and height
+.upload, .upload__canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+// Styles for the upload `form`
+.upload {
+  z-index: 1; // should be the higher `z-index`
+  // Styles for the `background`
+  background-color: rgba(4, 72, 59, 0.8);
+  background-image: radial-gradient(ellipse at 50% 120%, rgba(4, 72, 59, 1) 10%, rgba(4, 72, 59, 0) 40%);
+  background-position: 0 300px;
+  background-repeat: no-repeat;
+  // Hide it by default
+  opacity: 0;
+  visibility: hidden;
+  // Transition
+  transition: 0.5s;
+
+  // Upload overlay, that prevent the event `drag-leave` to be triggered while dragging over inner elements
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Styles applied while files are being dragging over the screen
+.upload--active {
+  // Translate the `radial-gradient`
+  background-position: 0 0;
+  // Show the upload component
+  opacity: 1;
+  visibility: visible;
+  // Only transition `opacity`, preventing issues with `visibility`
+  transition-property: opacity;
+}
+
+// Position the `canvas` behind all other elements
+.upload__canvas {
+  z-index: -1;
+}
+
+// Hide the file `input`
+.upload__input {
+  display: none;
+}
+
+// Styles for the icon
+.upload__icon {
+  position: relative;
+  left: calc(50% - 40px);
+  top: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: #EBF2EA;
+
+  path {
+    fill: rgba(4, 72, 59, 0.8);
+  }
+}
