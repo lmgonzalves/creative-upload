@@ -4,7 +4,7 @@ Creative Upload Interaction with Javascript and Canvas, based on [this dribbble 
 
 [**DEMO**](http://lmgonzalves.github.io/creative-upload/)
 
-**TUTORIAL** (coming soon!)
+[**TUTORIAL**](https://scotch.io/tutorials/developing-a-creative-upload-interaction-with-javascript-and-canvas)
 
 [**CODEPEN**](https://codepen.io/lmgonzalves/details/NyJVLw/)
 
